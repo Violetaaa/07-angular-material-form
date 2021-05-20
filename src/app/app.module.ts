@@ -5,6 +5,9 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 // Para cambiar el formato de fecha Mat-Datepicker a DD / MM / YYYY
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatListModule} from '@angular/material/list';
 
 import { AppComponent } from './app.component';
 import { PersonsComponent } from './persons/persons.component';
@@ -22,7 +25,10 @@ import { PersonComponent } from './persons/person/person.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+  MatListModule
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'en-GB' }], // Para cambiar el formato de fecha Mat-Datepicker a DD / MM / YYYY
   bootstrap: [AppComponent]
